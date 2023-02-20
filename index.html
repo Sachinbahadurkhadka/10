@@ -9,6 +9,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 	</head>
 	<body class="is-preload">
 
@@ -54,13 +55,53 @@
 
 		<!-- Main -->
 			<div id="main">
-
+			
+				
 				<!-- Intro -->
 					<section id="top" class="one dark cover">
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi, I'm SACHIN <strong>THE</strong> CONFIDENTIAL </h2>
+								<title>My Clock</title>
+								<style>
+								  #clock-container {
+									background-color: #0f0e0e;
+									border: 2px solid #ddd;
+									border-radius: 10px;
+									padding: 20px;
+									width: 300px;
+									margin: 0 auto;
+									margin-top: 100px;
+									box-shadow: 0px 0px 10px 0px #ddd;
+								  }
+								  
+								  #clock {
+									font-size: 3em;
+									text-align: center;
+								  }
+								</style>
+								<script>
+								  function updateClock() {
+									var now = new Date();
+									var clock = document.getElementById("clock");
+									clock.innerHTML = now.toLocaleTimeString();
+								  }
+								  
+								  setInterval(updateClock, 1000);
+								</script>
+							  </head>
+							  <body>
+								<div id="clock-container">
+								  <div id="clock"></div>
+								</div>
+							  </body>
+				
+								
+								
+								  
+								 
+								 
+								  <h2 class="alt">Hi, I'm SACHIN <strong>THE</strong> CONFIDENTIAL </h2>
 								<p>Don’t compromise yourself. You’re all you’ve got.</p>
 							</header>
 
