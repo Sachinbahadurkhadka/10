@@ -1,9 +1,71 @@
 
-
-
 <!DOCTYPE html>
 <html lang='en' class=''>
-
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  /* CSS for logo and progress bar */
+  .container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    position: relative;
+  }
+  
+  .fill {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 2s;
+  }
+  
+  .progress-text {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="container">
+    <div class="logo">
+      <div class="fill"></div>
+    </div>
+    <div class="progress-text">0%</div>
+  </div>
+  
+  <script>
+  // JavaScript to fill the progress bar and update the progress text
+  window.addEventListener("DOMContentLoaded", function() {
+    var progressBar = document.querySelector(".fill");
+    var progressText = document.querySelector(".progress-text");
+    var progress = 0;
+    var interval = setInterval(fillProgress, 20);
+  
+    function fillProgress() {
+      if (progress >= 100) {
+        clearInterval(interval);
+      } else {
+        progress++;
+        progressBar.style.width = progress + "%";
+        progressText.textContent = progress + "%";
+      }
+    }
+  });
+  </script>
+  
+  </body>
+  </html>
+  
 <head>
   
   
@@ -54,6 +116,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&amp;display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <style>
+    
     *,
     *:after,
     *:before {
@@ -3181,4 +3244,47 @@ Ultimately, my goal is to cultivate a team that will rally together when the goi
 	</body>
 </html>
 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* CSS for side panel */
+.sidepanel {
+  width: 300px;
+  background-color: #f1f1f1;
+  position: fixed;
+  right: -300px; /* Hide the side panel by default */
+  padding: 20px;
+  transition: right 0.3s;
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.closebtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #444;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.closebtn:hover {
+  background-color: #777;
+}
 
