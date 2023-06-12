@@ -3062,23 +3062,40 @@ Sachin's combination of analytical prowess, research capabilities, and unwaverin
           </div>
         </div>
       </div>
-      <div class="background-wrapper bg-grey">
-        <div class="background-inner">
-          <div class="container content-text">
-            <h1>Leadership</h1>
-            <p>
-Over the course of my professional journey spanning 5+ years, I have had the incredible opportunity to lead and guide a diverse range of talented teams. It has been a true blessing to work with individuals who are passionate, dedicated, and bring their unique skills to the table. As a leader, I believe in equipping my team members with the necessary tools and resources for success. This includes providing opportunities for professional development, training programs, and supporting their personal growth. I recognize the importance of influencing and inspiring those around me, and I strive to lead by example, sharing my expertise, and serving as a mentor that my team can be proud of.
+    <div class="background-wrapper bg-grey">
+		<div class="background-inner">
+			<div class="container content-text">
+				<h1>Leadership</h1>
+				<p>
+					Over the course of my professional journey spanning 5+ years, I have had the incredible opportunity to lead and guide a diverse range of talented teams. It has been a true blessing to work with individuals who are passionate, dedicated, and bring their unique skills to the table. As a leader, I believe in equipping my team members with the necessary tools and resources for success. This includes providing opportunities for professional development, training programs, and supporting their personal growth. I recognize the importance of influencing and inspiring those around me, and I strive to lead by example, sharing my expertise, and serving as a mentor that my team can be proud of.
 
-Creating a cohesive team is paramount to me - a team that not only stands shoulder-to-shoulder in challenging situations but also enjoys the lighter moments. Life is too short not to inject a sense of fun into the workplace. Whether it's sharing a laugh, participating in team-building activities, or finding creative ways to celebrate accomplishments, I believe in fostering an environment where enjoyment and productivity go hand in hand.
+					Creating a cohesive team is paramount to me - a team that not only stands shoulder-to-shoulder in challenging situations but also enjoys the lighter moments. Life is too short not to inject a sense of fun into the workplace. Whether it's sharing a laugh, participating in team-building activities, or finding creative ways to celebrate accomplishments, I believe in fostering an environment where enjoyment and productivity go hand in hand.
 
-Ultimately, my goal is to cultivate a team that will rally together when the going gets tough, while also fostering a positive and engaging atmosphere that promotes collaboration, innovation, and individual growth. This approach ensures not only the success of the team but also the fulfillment and satisfaction of each team member as we work towards achieving our shared goals.</p><br>
-          </div>
+					Ultimately, my goal is to cultivate a team that will rally together when the going gets tough, while also fostering a positive and engaging atmosphere that promotes collaboration, innovation, and individual growth. This approach ensures not only the success of the team but also the fulfillment and satisfaction of each team member as we work towards achieving our shared goals.
+				</p><br>
+			</div>
+			<button onclick="speakText()">Play Sound</button>
+		</div>
+	</div>
+
+	<script>
+		function speakText() {
+			var content = document.querySelector('.container.content-text').textContent;
+
+			if ('speechSynthesis' in window) {
+				var speech = new SpeechSynthesisUtterance(content);
+				window.speechSynthesis.speak(speech);
+			} else {
+				alert('Speech synthesis is not supported by your browser.');
+			}
+		}
+	</script>
           
         </div><!-- Motivation -->
       <div class="background-wrapper bg-alt-solid animate-leadership">
         <div class="background-inner">
           <div class="leadership-desc">
-            <h1>My Three e's</h1>
+            <h1>My Three M's</h1>
             <div class="scroll-down"></div>
             <div class="quadrant">
               <div class="panel-text">
