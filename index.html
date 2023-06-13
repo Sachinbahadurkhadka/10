@@ -4,6 +4,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang='en' class=''>
 
@@ -2683,34 +2684,35 @@
 <body>
 	<h1>About Me</h1>
        
-	<div class="switch">
-		<p>I'm Sachin. Let me share with you the story of my life, a journey that has been shaped by trust, dependability, and a commitment to personal growth.</p>
+<div class="switch">
+    <p>I'm Sachin. Let me share with you the story of my life, a journey that has been shaped by trust, dependability, and a commitment to personal growth.</p>
 
-		<p>From a young age, I recognized the importance of these values and made them an integral part of my character. As a young and dynamic individual, I possess boundless energy and a genuine enthusiasm for using modern technology to solve customer problems. I approach challenges with determination and perseverance, always maintaining a positive attitude and a can-do mindset.</p>
+    <p>From a young age, I recognized the importance of these values and made them an integral part of my character. As a young and dynamic individual, I possess boundless energy and a genuine enthusiasm for using modern technology to solve customer problems. I approach challenges with determination and perseverance, always maintaining a positive attitude and a can-do mindset.</p>
 
-		<p>Intellectual curiosity has always been a driving force in my life. I am constantly seeking knowledge and embracing new learning opportunities. This thirst for knowledge has transformed me into a lifelong learner, continually expanding my horizons and striving for personal and professional development.</p>
+    <p>Intellectual curiosity has always been a driving force in my life. I am constantly seeking knowledge and embracing new learning opportunities. This thirst for knowledge has transformed me into a lifelong learner, continually expanding my horizons and striving for personal and professional development.</p>
 
-		<p>Complex problems ignite my passion. I thrive when faced with intricate challenges, unraveling new insights, and creating multiple opportunities. Guiding a team of diverse perspectives toward a unified vision comes naturally to me, and I find great fulfillment in fostering collaboration and achieving remarkable results. Making a positive impact on the lives of others is a profound motivator for me, and I am dedicated to helping people along their own paths.</p>
+    <p>Complex problems ignite my passion. I thrive when faced with intricate challenges, unraveling new insights, and creating multiple opportunities. Guiding a team of diverse perspectives toward a unified vision comes naturally to me, and I find great fulfillment in fostering collaboration and achieving remarkable results. Making a positive impact on the lives of others is a profound motivator for me, and I am dedicated to helping people along their own paths.</p>
 
-		<p>In addition to my professional pursuits, I have a genuine love for meeting new people and hearing their perspectives. Engaging in meaningful conversations and embracing the diversity of experiences enriches my own journey and broadens my understanding of the world.</p>
+    <p>In addition to my professional pursuits, I have a genuine love for meeting new people and hearing their perspectives. Engaging in meaningful conversations and embracing the diversity of experiences enriches my own journey and broadens my understanding of the world.</p>
 
-		<p>This is the story of my life, where trust, dependability, intellectual curiosity, and a passion for making a difference intertwine. I continue to embrace every opportunity for growth, learning, and connecting with others as I strive to leave a lasting impact on the world.</p>
-	</div>
+    <p>This is the story of my life, where trust, dependability, intellectual curiosity, and a passion for making a difference intertwine. I continue to embrace every opportunity for growth, learning, and connecting with others as I strive to leave a lasting impact on the world.</p>
+</div>
 
-	<button onclick="speakText()">Play Sound</button>
+<button onclick="speakText()">Play Sound</button>
 
-	<script>
-		function speakText() {
-			var content = document.querySelector('.switch').textContent;
+<script>
+    function speakText() {
+        var content = document.querySelector('.switch').innerText;
 
-			if ('speechSynthesis' in window) {
-				var speech = new SpeechSynthesisUtterance(content);
-				window.speechSynthesis.speak(speech);
-			} else {
-				alert('Speech synthesis is not supported by your browser.');
-			}
-		}
-	</script>
+        if ('speechSynthesis' in window) {
+            var speech = new SpeechSynthesisUtterance(content);
+            window.speechSynthesis.speak(speech);
+        } else {
+            alert('Speech synthesis is not supported by your browser.');
+        }
+    }
+</script>
+
 
 						</div>
                 
@@ -3071,35 +3073,20 @@ Sachin's combination of analytical prowess, research capabilities, and unwaverin
 	<div class="background-wrapper bg-grey">
 		<div class="background-inner">
 			<div class="container content-text">
-				<h1>Leadership</h1>
-				<p>
-					Over the course of my professional journey spanning 5+ years, I have had the incredible opportunity to lead and guide a diverse range of talented teams. It has been a true blessing to work with individuals who are passionate, dedicated, and bring their unique skills to the table. As a leader, I believe in equipping my team members with the necessary tools and resources for success. This includes providing opportunities for professional development, training programs, and supporting their personal growth. I recognize the importance of influencing and inspiring those around me, and I strive to lead by example, sharing my expertise, and serving as a mentor that my team can be proud of.
+				<div>
+	<div>
+		<h1>Leadership</h1>
+		<p>
+			Over the course of my professional journey spanning 5+ years, I have had the incredible opportunity to lead and guide a diverse range of talented teams. It has been a true blessing to work with individuals who are passionate, dedicated, and bring their unique skills to the table. As a leader, I believe in equipping my team members with the necessary tools and resources for success. This includes providing opportunities for professional development, training programs, and supporting their personal growth. I recognize the importance of influencing and inspiring those around me, and I strive to lead by example, sharing my expertise, and serving as a mentor that my team can be proud of.
 
-					Creating a cohesive team is paramount to me - a team that not only stands shoulder-to-shoulder in challenging situations but also enjoys the lighter moments. Life is too short not to inject a sense of fun into the workplace. Whether it's sharing a laugh, participating in team-building activities, or finding creative ways to celebrate accomplishments, I believe in fostering an environment where enjoyment and productivity go hand in hand.
+			Creating a cohesive team is paramount to me - a team that not only stands shoulder-to-shoulder in challenging situations but also enjoys the lighter moments. Life is too short not to inject a sense of fun into the workplace. Whether it's sharing a laugh, participating in team-building activities, or finding creative ways to celebrate accomplishments, I believe in fostering an environment where enjoyment and productivity go hand in hand.
 
-					Ultimately, my goal is to cultivate a team that will rally together when the going gets tough, while also fostering a positive and engaging atmosphere that promotes collaboration, innovation, and individual growth. This approach ensures not only the success of the team but also the fulfillment and satisfaction of each team member as we work towards achieving our shared goals.
-				</p><br>
-			</div>
-			<button onclick="speakText()">Play Sound</button>
-		</div>
+			Ultimately, my goal is to cultivate a team that will rally together when the going gets tough, while also fostering a positive and engaging atmosphere that promotes collaboration, innovation, and individual growth. This approach ensures not only the success of the team but also the fulfillment and satisfaction of each team member as we work towards achieving our shared goals.
+		</p>
+		<br>
 	</div>
+	
 
-	<script>
-		function speakText() {
-			var content = `Over the course of my professional journey spanning 5+ years, I have had the incredible opportunity to lead and guide a diverse range of talented teams. It has been a true blessing to work with individuals who are passionate, dedicated, and bring their unique skills to the table. As a leader, I believe in equipping my team members with the necessary tools and resources for success. This includes providing opportunities for professional development, training programs, and supporting their personal growth. I recognize the importance of influencing and inspiring those around me, and I strive to lead by example, sharing my expertise, and serving as a mentor that my team can be proud of.
-
-					Creating a cohesive team is paramount to me - a team that not only stands shoulder-to-shoulder in challenging situations but also enjoys the lighter moments. Life is too short not to inject a sense of fun into the workplace. Whether it's sharing a laugh, participating in team-building activities, or finding creative ways to celebrate accomplishments, I believe in fostering an environment where enjoyment and productivity go hand in hand.
-
-					Ultimately, my goal is to cultivate a team that will rally together when the going gets tough, while also fostering a positive and engaging atmosphere that promotes collaboration, innovation, and individual growth. This approach ensures not only the success of the team but also the fulfillment and satisfaction of each team member as we work towards achieving our shared goals.`;
-
-			if ('speechSynthesis' in window) {
-				var speech = new SpeechSynthesisUtterance(content);
-				window.speechSynthesis.speak(speech);
-			} else {
-				alert('Speech synthesis is not supported by your browser.');
-			}
-		}
-	</script>
           
         </div><!-- Motivation -->
       <div class="background-wrapper bg-alt-solid animate-leadership">
